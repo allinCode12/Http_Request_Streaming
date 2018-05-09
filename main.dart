@@ -12,7 +12,7 @@ void main(){
 
     routes: <String, WidgetBuilder>{
       "/StarWars_API": (BuildContext ctx) =>StarWarsData(),
-      "/Stream_Pictures": (BuildContext ctx) => PictureData()
+      "/Stream_Pictures": (BuildContext ctx) => MyApp()
     }
 
   ));
@@ -42,7 +42,7 @@ final myColor1 = const Color(0xFF273c75);
                 icon: new Icon(Icons.data_usage, color: myColor1,),
                 iconSize: 100.0,
                 onPressed: (){
-                  Navigator.of(context).pushNamed("/StarWars API");
+                  Navigator.of(context).pushNamed("/StarWars_API");
                 }
               ),
               new Text("Get Data List", style: new TextStyle(fontSize: 25.0, fontStyle: FontStyle.italic),),
